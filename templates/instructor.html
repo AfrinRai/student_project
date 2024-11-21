@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-        {% for courses in course %}
+        {% for instructors in instructor %}
         <div style="width: 300px;
         margin: 30px auto;
         background-color: white;
@@ -17,10 +17,10 @@
         font-family: Arial, sans-serif;
         text-align: center;
         color: #333;">
-            <h2>{{ courses.name }}</h2>
-            <p><strong>Course Code: </strong>{{ courses.course_id }}</p>
-            <p><strong>Credit: </strong>{{ courses.credits }}</p> 
-            <p><strong>Instructor : </strong>{{ courses.instructor }}</p>       
+            <h2>{{ instructors.name }}</h2>
+            <p><strong>Instructor ID : </strong>{{ instructors.instructor_id }}</p>
+            <p><strong>Department : </strong>{{ instructors.department }}</p>   
+            <p><strong>Email: </strong>{{ instructors.email }}</p>     
         </div>
         {% endfor %}
     </div>
