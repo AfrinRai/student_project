@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        {% for courses in course %}
+        <div style="width: 300px;
+        margin: 30px auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: #333;">
+            <h2>{{ courses.name }}</h2>
+            <p><strong>Course Code: </strong>{{ courses.course_id }}</p>
+            <p><strong>Credit: </strong>{{ courses.credits }}</p>        
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        {% for students in student %}
+        <div style="width: 300px;
+        margin: 30px auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: #333;">
+            <h2>{{ students.name }}</h2>
+            <p><strong>Student ID: </strong>{{ students.stu_ID }}</p>
+            <p><strong>Major: </strong>{{ students.major }}</p>
+            <p><strong>Grade: </strong>{{ students.grade }}</p>
+            <p><strong>Age: </strong>{{ students.age }}</p>
+            <p><strong>Gender: </strong>{{ students.gender }}</p>        
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
